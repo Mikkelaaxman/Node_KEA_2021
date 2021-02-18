@@ -32,9 +32,6 @@ console.log(thisYear);
 const currentYear = Number(year) + number;
 console.log(currentYear);
 
-console.log(Number("123abc"));
-console.log(parseInt("123abc456"));
-
 console.log(+ year + number);
 
 

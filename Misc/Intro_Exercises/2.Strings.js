@@ -10,9 +10,6 @@ const numberTwo = "2.30";
 console.log(parseFloat(numberOne) + parseFloat(numberTwo));
 
 // --------------------------------------
-
-
-// --------------------------------------
 // Exercise 4 - Add the numbers and the total with 2 decimals
 
 const anotherNumberOne = "1.10";
@@ -35,18 +32,16 @@ const average = (one + two + three) / 3;
 
 console.log(average.toFixed(5));
 
-
-
 // --------------------------------------
 // Exercise 6 - Get the character by index
 
 const letters = "abc";
 // Get me the character "c"
 
-console.log(letters.search("c")); // gets the index then look up again (not efficient)
+/* console.log(letters.search("c")); // gets the index then look up again (not efficient)
 
 console.log(letters.charAt(2));
-
+ */
 console.log(letters[2]);
 
 // --------------------------------------

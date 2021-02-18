@@ -15,12 +15,13 @@ const friends = [];
 
 // What a lonely array. Add at least 3 friend objects to it.  
 
-const henriette = {
-    name: "Henriette",
-    age: 34
-};
+const friend1 = {name: "Mikkel"}
+const friend2 = {name: "Anden Mikkel"}
+const friend3 = {name: "Mikkel III"}
 
-friends.push(henriette);
+friends.push(friend1, friend2, friend3);
+
+console.log(friends);
 
 // --------------------------------------
 // Exercise 3 - Get the index of first occurance of that value. 
@@ -39,8 +40,9 @@ const diet = ["tomato", "cucumber", "rocket"];
 
 // You are a programmer. In one line (one statement) insert hamburger, soda and pizza between the elements cucumber and rocket
 
-const newDiet = diet.splice(2, 0, "hambuger", "soda", "pizza");
-// newDiet contains the deleted elements in this case nothing was deleted
+diet.splice(2, 0, "hambuger", "soda", "pizza");
+
+console.log(diet);
 
 // --------------------------------------
 // Exercise 5 - Remove element
@@ -65,8 +67,11 @@ const lettersExpanded = ["a", "b", "c", "d", "e", "f", "g", "h"];
 
 // log every second char in the array starting from b
 
-
-
+for (let i = 1; i < lettersExpanded.length; i++) {
+    if (i % 2 != 0) {
+    console.log(lettersExpanded[i]);
+    }
+}
 // --------------------------------------
 // Exercise 8 - For loop and if statement
 
@@ -77,4 +82,14 @@ const discardedNumbers = [];
 // log the element if the number is above 6 or below 0
 // else push them to the array discardedNumbers
 
+for (i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 6 || numbers[i] < 0){
+        console.log(numbers[i]);
+    }
+    else {
+        discardedNumbers.push(numbers[i]);   
+    }   
+}
+
+console.log("Discards: " + discardedNumbers);
 // --------------------------------------

@@ -16,11 +16,12 @@ console.log(myObj["message"]); // square notation
 
 // Create an object that has your name and age. 
 
-const danielBoy = {
-    name: "Daniel Petersen",
-    age: 32
+const Mikkel = {
+    name: "Mikkel Åxman",
+    age: 30
 };
 
+console.log(Mikkel);
 
 // --------------------------------------
 // Exercise 3 - Add a property 
@@ -30,7 +31,8 @@ const stackOverflow = {};
 // make a rule called isAllowed and let the value be true
 
 stackOverflow.isAllowed = true;
-
+stackOverflow.exercise = 3;
+console.log(stackOverflow);
 
 // --------------------------------------
 // Exercise 4 - Remove a property 
@@ -38,12 +40,13 @@ stackOverflow.isAllowed = true;
 const thisSong = { description: "The best song in the world." };
 
 // remove the property "description" and add a property called "about" that should say "Just a tribute." 
+console.log(thisSong);
 
 delete thisSong.description;
 
 thisSong.about = "Just a tribute";
 
-
+console.log(thisSong);
 // --------------------------------------
 
 
