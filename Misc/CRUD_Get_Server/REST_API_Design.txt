@@ -1,0 +1,15 @@
+HTTP methods in this order: GET, POST, PUT/PATCH, DELETE
+the table /<collection>: is for recipes 
+
+GET /recipe         Retrieve all recipes (Returns a collection of objects)
+GET /recipe/id      Retrieve one recipe (path variable with :id in express)
+
+POST /recipe        Create one-or-more Recipes (Client send a json object to create a new entry in table. Server handles ID)
+POST /recipe/id     Create recipe and give it specific ID (Rarely used)
+
+Patch /recipe       Update all recipes
+PATCH /recipe/id    (Updates single entry with part of the resource)
+(PUT /recipe/id     would replace the entire entry)
+
+DELETE /recipe/id   (Deletes one entry with id)
+(DELETE /recipe     would delete or truncate all resources) 
