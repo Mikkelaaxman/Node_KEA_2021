@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/recipe", (req, res) => {
-    res.send({recipe: req.params});
+    res.send({recipe: recipe});
 });
 
 app.get("/recipe/:id", (req, res) => {
