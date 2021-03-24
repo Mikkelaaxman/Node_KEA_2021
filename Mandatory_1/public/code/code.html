@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="code.css">
+    <title>Code</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-dark">
+        <a href="/" class="navbar-brand">Welcome</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="/code" class="nav-link">Code</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/crud" class="nav-link">CRUD</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/tools" class="nav-link">Tools</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/commandlines" class="nav-link">Commandlines</a>
+                </li>
+            </ul>
+        </div>
+        <a href="https://github.com/Mikkelaaxman/Node_KEA_2021" class="navbar-brand">
+            <img src="/resources/GitHub-Mark-Light-32px.png" width="30" height="30" alt="">
+            My Github
+        </a>
+    </nav>
+
+    <div class="jumbotron text-center">
+        <div class="container text-center">
+            <h1 class="display-5">Notes On Codes</h1>
+            <p class="lead">Basics for JavaScript, HTML and CSS</p>
+        </div>
+
+        <div class="bg-secondary text-white overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">JavaScript</h2>
+            </div>
+            <div class="bg-dark box-shadow mx-auto"
+                style="width: 80%; height: auto; border-radius: 21px 21px 21px 21px;">
+                <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript</a>
+                </p>
+                <p class="lead">Callbacks</p>
+                <p>Are "return statements" that happens after another function has completed. In JavaScript, functions
+                    are objects. Because of this, functions can take functions as arguments, and can be returned by
+                    other functions. Functions that do this are called higher-order functions. Any function that is
+                    passed as an argument is
+                    called a callback function. Because JavaScript is event-driven, it wont wait for some slow API call
+                    to execute the next function
+                    and if ordering of the functions isn't upheld, we need callbacks to make sure certain code doesnt
+                    execute before it is time.
+                </p>
+                <p class="lead">Time</p>
+                <p>Date() is weird in JS since array for months starts at 0 and days starts at 1
+                </p>
+                <p class="lead">Var</p>
+                <p>Don't use var. use let or const. 
+                </p>
+            </div>
+        </div>
+        <div class="bg-secondary text-white overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">HTML and CSS</h2>
+                <p class="lead">with <strong> <a href="https://getbootstrap.com/">bootstrap</a></strong></p>
+            </div>
+            <div class="bg-dark box-shadow mx-auto"
+                style="width: 80%; height: auto; border-radius: 21px 21px 21px 21px;">
+                <p class="lead">
+                    <a href="https://getbootstrap.com/docs/4.0/content/typography/">Link to useful typographies</a>
+                </p>
+                <p>To display a less than sign (&lt;) we must write: <b>&amp;lt;</b> or <b>&amp;#60;</b>. And if lt is
+                    Less Than, what do you think Greater Than is?</p>
+                <a href="https://www.w3schools.com/html/html_entities.asp"> other useful entities</a>
+                <li>we can use &lt;code&gt; for code</li>
+                <ol>
+                    <li>use &lt;li&gt; for lists, and can be wrapped in ul or ol for different types. ol is ordered i.e.
+                        numbered</li>
+                </ol>
+                <li>&lt;script src="/filename.js"&gt; for linking to a script in another file</li>
+            </div>
+        </div>
+        <div class="bg-secondary text-white overflow-hidden">
+            <div class="my-3 py-3">
+                <h2 class="display-5">JSON</h2>
+                <p class="lead">JavaScript Object Notation</p>
+            </div>
+            <div class="bg-dark box-shadow mx-auto"
+                style="width: 80%; height: 300px; border-radius: 21px 21px 21px 21px;">
+                <p class="lead">
+                    Is used for storing and transmitting data, and is easy for humans and machines to read
+                    . It uses simple attributes and key pairs kinda like a text-based excel file.
+                </p>
+                <span class="jscolor" style="color:white"><span class="jsnumbercolor" style="color:red">
+                    </span> <span class="commentcolor" style="color:green">// Storing data:<br></span>myObj = {name:
+                    <span class="jsstringcolor" style="color:brown">"John"</span>, <span class="jsnumbercolor"
+                        style="color:red">
+                    </span> age: <span class="jsnumbercolor" style="color:red">31</span>, city: <span
+                        class="jsstringcolor" style="color:brown">"New York"</span>};<br>myJSON = <span
+                        class="jsnumbercolor" style="color:red">
+                    </span> JSON.<span class="jspropertycolor"
+                        style="color:white">stringify</span>(myObj);<br>localStorage.<span class="jspropertycolor"
+                        style="color:white">setItem</span>(<span class="jsstringcolor"
+                        style="color:brown">"testJSON"</span>, myJSON);<br><br><span class="jsnumbercolor"
+                        style="color:red">
+                    </span> <span class="commentcolor" style="color:green">// Retrieving data:<br></span>text =
+                    localStorage.<span class="jspropertycolor" style="color:white">getItem</span>(<span
+                        class="jsstringcolor" style="color:brown">"testJSON"</span>);<br>obj = <span
+                        class="jsnumbercolor" style="color:red">
+                    </span> JSON.<span class="jspropertycolor" style="color:white">parse</span>(text);<br>document.<span
+                        class="jspropertycolor" style="color:white">getElementById</span>(<span class="jsstringcolor"
+                        style="color:brown">"demo"</span>).<span class="jspropertycolor"
+                        style="color:white">innerHTML</span> =
+                    obj.<span class="jspropertycolor" style="color:white">name</span>; </span>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./welcome/welcome.js"></script>
+</body>
+
+</html>
