@@ -22,7 +22,7 @@ async function main(emailAdress) {
     // send mail with defined transport object
     let info = await transporter.sendMail({
         from: emailAdress, // sender address
-        to: "victorwpetersen@gmail.com", // list of receivers
+        to: "Mikkelaaxman@gmail.com", // list of receivers
         subject: "Hello ✔", // Subject line
         text: "Hello world?", // plain text body
         html: "<b>email send?</b>", // html body
@@ -39,7 +39,7 @@ router.post("/api/contact", (req, res) => {
     console.log(req.body.email)
     main(req.body.email).catch(console.error);
     setTimeout(() => {
-        res.redirect("/");
+     //   res.redirect("/contact");
     }, (2 * 1000))
 });
 

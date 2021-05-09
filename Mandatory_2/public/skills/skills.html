@@ -1,4 +1,20 @@
 <html>
+<body>
+    <div class="container">
+        <h1>My Skills</h1>
+        <br>
+        <p>
+            I've been programming on and off since 2013 and working as a woodworker in between because I love to build things in real life too.
+            I constructed my first custom desktop gamer PC when i was 14, and have had fun helping family and friends build theirs as well. 
+            My favourite part is probably planning and improving a build, whether it's a program, pc or a drywall, and seeing it all coming together as i planned in the end. 
+        </p>
+            <p>There will be added more to my Portfolio as i continue working on it and improving the website, both front and
+                backend, so stay tuned! </p>
+
+        <p>Below you can see a piechart representing some of my main programming technical skills</p>
+    </div>
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+</body>
 
 <head>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
@@ -12,12 +28,12 @@
 
             let data = google.visualization.arrayToDataTable([
                 ['Task', 'Hours per Day'],
-                ['Node.js', 10],
-                ['Python', 4],
-                ['aws', 3],
+                ['JavaScript', 7],
+                ['C#', 4],
+                ['AWS', 3],
                 ['MySQL', 2],
-                ['Mongodb', 2],
-                ['Java', 7]
+                ['Angular', 2],
+                ['Java', 10]
             ]);
 
             let options = {
@@ -29,21 +45,7 @@
             chart.draw(data, options);
         }
     </script>
-</head>
 
-<body>
-    <div class="container">
-        <br>
-        <p>
-            I enjoy programming, and I always aspire to learn new things to improve my programming skills. My primary language is java, as I have great experience creating and experimenting with different tasks in this language. Besides Java as my go-to programming
-            language, I have sufficient basic knowledge in languages such as python, node.js, and MySQL.
-        </p>
-        <p>
-            Besides programming, I really like to work with computers and examine the different possibilities they present, both on a high level of research and on a more low-level groundwork approach.
-        </p>
-        <p>Below you can see a breakdown represented as a piechart representing my technical skills as a programmer</p>
-    </div>
-    <div id="piechart" style="width: 900px; height: 500px;"></div>
-</body>
+</head>
 
 </html>
